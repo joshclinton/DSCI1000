@@ -8,3 +8,7 @@ The target audience is someone who is interested in Data Science, but who has no
 The contents of this repository represent a work-in-progress and revisions and edits are likely frequent.  
 
 Reactions and comments are welcome and apologies in advance for typos, errors, and inefficiencies, but you get what you pay for ;)
+
+The notes are not yet sequenced, but the order should be something like: DataWrangling, NationalPopularVote, Resampling, PredictingElectoralCollege. That said, some resampling is done in NationalPopularVote.
+
+Also note that I have not yet added appropriate citations to existing work in the relevant areas, nor have I motivated each section sufficiently with a motivating puzzle.  
