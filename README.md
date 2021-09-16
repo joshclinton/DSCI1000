@@ -9,6 +9,8 @@ The contents of this repository represent a work-in-progress and revisions and e
 
 Reactions and comments are welcome and apologies in advance for typos, errors, and inefficiencies, but you get what you pay for ;)
 
-The notes are not yet sequenced, but the order should be something like: DataWrangling, NationalPopularVote, Resampling, PredictingElectoralCollege. That said, some resampling is done in NationalPopularVote.
+The data and Markdown files are not yet public, as they are still being edited and cleaned, but contact me if interested.
+
+The notes are not yet sequenced into a single document -- or organized into an elegant webpage yet -- but the order should be: DataWrangling, NationalPopularVote, Resampling, PredictingElectoralCollege. That said, some resampling is done in NationalPopularVote.
 
 Also note that I have not yet added appropriate citations to existing work in the relevant areas, nor have I motivated each section sufficiently with a motivating puzzle.  
