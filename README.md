@@ -60,11 +60,11 @@ Lecture slides Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/
 
 #### 4\. Univariate Data Analysis
 
-Lecture Notes, Part 1:  [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
+Lecture Notes, Part 1:  [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
 
 Dataset: [nba_players.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
 
-Lecture Notes, Part 2: [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
+Lecture Notes, Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
 
 Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
