@@ -33,7 +33,6 @@ Fall 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/b
 
 Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2022.html)
 
-
 #### 2\. Hello, World!
 
 Lecture notes Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
@@ -44,12 +43,13 @@ Lecture notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/L
 
 #### 3\.  Data Wrangling
 
-Lecture slides: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic3_DataWrangling/Topic3_DataWranglingLecture-Student.pdf)
-Lecture notes: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic3_DataWrangling/DataWrangling.pdf)
+Lecture slides Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.Rmd)
 
-[Michigan Exit Poll Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic3_DataWrangling/data/Final%20MI%20subset.Rdata)
+Lecture slides Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
 
-[Johns Hopkins Covid Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic3_DataWrangling/data/JohnsHopkinsStateCasesTS.csv)
+[MI2020_ExitPoll.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll.Rdata)
+
+[MI2020_ExitPoll_small.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll_small.rds)
 
 *Readings/Resources*
 
@@ -60,20 +60,23 @@ Lecture notes: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures
 [Wickham \& Grolemund, Chapter 3](https://learning-oreilly-com.proxy.library.vanderbilt.edu/home/)
 
 
+_ Broken Links Below __
+
+
 #### 4\. Univariate Data Analysis
 
-Lecture Notes, Part 1: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/Lecture4_Univariate.Rmd) [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/Lecture4_Univariate.pdf) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/Lecture4_Univariate.html)
+Lecture Notes, Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4_Univariate.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4_Univariate.pdf) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/Lecture4_Univariate.html)
 
-Dataset: [nba_players.Rds](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
+Dataset: [nba_players.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
 
 [Codebook for nba_players.Rds](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/nba_players_2018.html)
 
 
-Lecture Notes, Part 2:[.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.Rmd)
-[PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.pdf)
+Lecture Notes, Part 2:[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.Rmd)
+[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.pdf)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.html)
 
-Dataset: [game_summary.Rds](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture4Univariate/game_summary.Rds) 
+Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
 [Codebook for game_summary.Rds](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/game_summary_codebook.html)
 
@@ -83,62 +86,62 @@ Dataset: [game_summary.Rds](https://github.com/wdoyle42/vandy_ds_1000/raw/main/L
 
 #### 5\. Univariate Data Visualization
 
-Detailed Lecture Notes: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic5_UnivariateVisualization/NationalPopularVote.pdf) 
+Detailed Lecture Notes: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/NationalPopularVote.pdf) 
 
-Lecture slides: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic5_UnivariateVisualization/Topic5_StudentCopy_VisualizationUnivariateGraphics.pdf)
+Lecture slides: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_StudentCopy_VisualizationUnivariateGraphics.pdf)
 
-Dataset: [Pres2020.PV.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
+Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
-Student Outline: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic5_UnivariateVisualization/StudentOutline_UnivariateDataViz.Rmd) 
+Student Outline: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/StudentOutline_UnivariateDataViz.Rmd) 
 
 [If interested: Challenger: The Final Flight](https://www.netflix.com/title/81012137)
 
 #### 6\. Conditional Data Visualization
 
-Student Outline: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic6_ConditionalVisualization/StudentOutline_ConditionalVisualization.Rmd) 
+Student Outline: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/StudentOutline_ConditionalVisualization.Rmd) 
 
-Complete Markdown Code: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic6_ConditionalVisualization/Topic6_MarkdownComplete.Rmd) 
+Complete Markdown Code: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_MarkdownComplete.Rmd) 
 
-Lecture slides - Part 1: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part1.pdf)
+Lecture slides - Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part1.pdf)
 
-Lecture slides - Part 2: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part2.pdf)
+Lecture slides - Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part2.pdf)
 
-Optional Report on 2020 Polls: [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic6_ConditionalVisualization/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf) 
+Optional Report on 2020 Polls: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf) 
 
 #### 7\. Resampling Redux
 
-Partial List of functions used thus far: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/FunctionList.Rmd)
-[HTML](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/FunctionList.html)
+Partial List of functions used thus far: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/FunctionList.Rmd)
+[HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/FunctionList.html)
 
-Lecture Notes - Part 1: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.Rmd)
-[PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.pdf)
+Lecture Notes - Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.Rmd)
+[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.pdf)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.html)
 
-Lecture Notes - Part 2: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.Rmd)
-[PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.pdf)
+Lecture Notes - Part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.Rmd)
+[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.pdf)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.html)
 
-Dataset: [pa.sample.select.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic7_Resampling/data/pa.sample.select.Rdata) 
+Dataset: [pa.sample.select.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/data/pa.sample.select.Rdata) 
 
-Dataset: [Pres2020.PV.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
+Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
 #### 8\. Predicting (And Mapping)
 
-Predicting the Electoral College - JDC Code: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/Topic8_Predictions.Rmd)
+Predicting the Electoral College - JDC Code: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Predictions.Rmd)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_Predictions.html)
 
-Predicting the Electoral College: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.Rmd)
+Predicting the Electoral College: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.Rmd)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.html)
 
-Dataset: [Pres2020.StatePolls.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/data/Pres2020.StatePolls.Rdata) 
+Dataset: [Pres2020.StatePolls.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/Pres2020.StatePolls.Rdata) 
 
-Optional Notes - Mapping in R: [.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/Topic8_Maps.Rmd)
-[PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/Topic8_Maps.pdf)
+Optional Notes - Mapping in R: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Maps.Rmd)
+[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Maps.pdf)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_Maps.html)
 
-Optional Dataset: [StatePresidentialVote2020.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/data/StatePresidentialVote2020.Rdata) 
+Optional Dataset: [StatePresidentialVote2020.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/StatePresidentialVote2020.Rdata) 
 
-Optional Dataset: [StateECV.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic8_Predictions/data/StateECV.Rdata) 
+Optional Dataset: [StateECV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/StateECV.Rdata) 
 
 
 #### 9\. Regression
@@ -146,19 +149,19 @@ Optional Dataset: [StateECV.Rdata](https://github.com/wdoyle42/vandy_ds_1000/raw
 Regression notes, part 1: [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart1.html)
 
 Regression notes, part 2:
-[.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd)
+[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart2.html)
 
 Regression notes, part 3:
-[.Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd)
+[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart3.html)
 
 
-["Simpler" version of workflows](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic9_Regression/workflows_examples.Rmd)
+["Simpler" version of workflows](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/workflows_examples.Rmd)
 
-Movie Data: [mv.Rds](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic9_Regression/mv.Rds)
+Movie Data: [mv.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/mv.Rds)
 
-[In case you're interested, code for accessing movie data, including the IMDB data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic9_Regression/access_movie_data.R)
+[In case you're interested, code for accessing movie data, including the IMDB data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/access_movie_data.R)
 
 #### 10\.  Clustering, Text, and Twitter...
 
@@ -170,51 +173,51 @@ Predicting with Text, part 3: [.Rmd](https://raw.githubusercontent.com/wdoyle42/
 
 Sentiment Analysis with Twttter Text, part 4:  [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.html)
 
-Florida County Data - for part 1: [FloridaCountData.Rda](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic10_Clustering/FloridaCountyData.Rda)
+Florida County Data - for part 1: [FloridaCountData.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FloridaCountyData.Rda)
 
-Federalist Papers Data - for part 2: [FederalistPaperCorpusTidy.Rda](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic10_Clustering/FederalistPaperCorpusTidy.Rda)
+Federalist Papers Data - for part 2: [FederalistPaperCorpusTidy.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperCorpusTidy.Rda)
 
-Federalist Papers Data - for part 3: [FederalistPaperDocumentTermMatrix.Rda](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic10_Clustering/FederalistPaperDocumentTermMatrix.Rda)
+Federalist Papers Data - for part 3: [FederalistPaperDocumentTermMatrix.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperDocumentTermMatrix.Rda)
 
-Tweet-Level Data on Trump Tweets - for part 4: [Trumptweets.Rda](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic10_Clustering/Trumptweets.Rda)
+Tweet-Level Data on Trump Tweets - for part 4: [Trumptweets.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trumptweets.Rda)
 
-Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rda](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic10_Clustering/Trump_tweet_words.Rda)
+Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trump_tweet_words.Rda)
 
 
 #### 11\. Classification: Or, Become an Admissions Dean for Fun and Profit!
 Lecture 1: The Admissions "Funnel" and the Problem of Classification
 
-[Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/college_admissions.Rmd)
+[Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions.Rmd)
 
 [HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions.html)
 
-[Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/admit_data.rds)
+[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
 Lecture 2: Logistic Regression and the AUC
 
-[Rmd](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/college_admissions_2.Rmd)
+[Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_2.Rmd)
 
 [HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_2.html)
 
-[Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/admit_data.rds)
+[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
 Lecture 3: Cross Validation and Feature Selection for Classifiers
 
-[Rmd Notes](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/college_admissions_3.Rmd)
+[Rmd Notes](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_3.Rmd)
 
 [HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_3.html)
 
 
-[Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/admit_data.rds)
+[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
 
 Lecture 4: Changing Policy
 
-[Rmd Notes](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/college_admissions_4.Rmd)
+[Rmd Notes](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_4.Rmd)
 
 [HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_4.html)
 
-[Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Topic11Classification/admit_data.rds)
+[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
 
 
