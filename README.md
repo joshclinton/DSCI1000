@@ -28,15 +28,19 @@ I have not yet added appropriate citations to existing work in the relevant area
 
 Lecture notes:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.Rmd)
 
-Spring 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
+Fall 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
+
+
+Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2022.html)
+
 
 #### 2\. Hello, World!
 
-Lecture notes: [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld.html) [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld.pdf) [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld.Rmd)
+Lecture notes Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture2_HelloWorld/Topic2_HelloWorld.Rmd)
 
-Data: [College Debt Data](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture2_HelloWorld/sc_debt.Rds)
+Data: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
 
-Part 2 of lecture notes: [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld_part2.html) [PDF](https://github.com/wdoyle42/vandy_ds_1000/raw/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld_part2.pdf) [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture2_HelloWorld/Lecture2_HelloWorld_part2.Rmd)
+Lecture notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Lecture2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Lecture2_HelloWorld_part2.Rmd)
 
 #### 3\.  Data Wrangling
 
