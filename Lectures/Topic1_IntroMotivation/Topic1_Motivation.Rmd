@@ -5,18 +5,12 @@ output: beamer_presentation
 fontsize: 10pt
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Today's Agenda
 
 1. Meet the Instructor(s):
 - Prof. Clinton: _josh.clinton@vanderbilt.edu_
 - Prof. Doyle: _w.doyle@vanderbilt.edu_
-- Jennifer Barnes (TA): _jennifer.n.barnes@vanderbilt.edu_
 
-Course Email: _vu.dsci1000@gmail.com_
 
 2. Course Motivation & Objectives
 - Content: Critical Thinking, Analysis, Presentation
