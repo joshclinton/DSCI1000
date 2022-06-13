@@ -34,17 +34,17 @@ Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000
 
 #### 2\. Hello, World!
 
-Lecture notes Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
+Lecture notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
 
 Data: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
 
-Lecture notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
+Lecture notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
 
 #### 3\.  Data Wrangling
 
-Lecture slides Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.Rmd)
+Lecture slides Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.Rmd)
 
-Lecture slides Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
+Lecture slides Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
 
 [MI2020_ExitPoll.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll.Rdata)
 
@@ -60,11 +60,11 @@ Lecture slides Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/
 
 #### 4\. Univariate Data Analysis
 
-Lecture Notes, Part 1:  [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
+Lecture Notes, Part 1:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
 
 Dataset: [nba_players.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
 
-Lecture Notes, Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
+Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
 
 Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
