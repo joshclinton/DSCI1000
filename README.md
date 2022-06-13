@@ -36,11 +36,11 @@ Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000
 
 #### 2\. Hello, World!
 
-Lecture notes Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture2_HelloWorld/Topic2_HelloWorld.Rmd)
+Lecture notes Part 1: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/HelloWorld_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/HelloWorld.Rmd)
 
 Data: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
 
-Lecture notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Lecture2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Lecture2_HelloWorld_part2.Rmd)
+Lecture notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
 
 #### 3\.  Data Wrangling
 

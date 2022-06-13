@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ##  Welcome to Data Science!
@@ -72,8 +72,9 @@ To run the code below in R, you can:
 -   In OS X, place the cursor in the code chunk and hit `CMD+RETURN`
 -   In Windows, place the cursor in the code chunk and hit `CTRIL+RETURN`
 
-```{r}
+```{r, message=FALSE}
 ## Get necessary libraries-- won't work the first time, because you need to install them!
+# install.packages(tidyverse)  # Uncomment this to install
 library(tidyverse)
 ```
 
@@ -128,7 +129,7 @@ It's hard to know what these mean without some more information. We usually use 
 | adm_rate       | Admissions Rate: proportion of applications accepted                                                                                                                                                   |
 | ccbasic        | Type of institution-- see [here](https://data.ed.gov/dataset/9dc70e6b-8426-4d71-b9d5-70ce6094a3f4/resource/658b5b83-ac9f-4e41-913e-9ba9411d7967/download/collegescorecarddatadictionary_01192021.xlsx) |
 | selective      | Institution admits fewer than 10 % of applicants, 1=Yes, 0=No                                                                                                                                          |
-| research_u     | Institiution is a research university 1=Yes, 0=No                                                                                                                                                      |
+| research_u     | Institution is a research university 1=Yes, 0=No                                                                                                                                                      |
 | sat_avg        | Average Sat Scores                                                                                                                                                                                     |
 | md_earn_wne_p6 | Average Earnings of Recent Graduates                                                                                                                                                                   |
 |ugds  | Number of undergraduates |
@@ -216,6 +217,10 @@ df%>%
 
 *Quick Exercise* Choose a different college and two different things about that college. Have R print the output.
 
+```{r}
+# INSERT CODE HERE
+```
+
 ## Summarizing Data
 
 To summarize data, we use the `summarize` command. Inside that command, we tell R two things: what to call the new variable that we're creating, and what numerical summary we would like. The code below summarizes median debt for the colleges in the dataset by calculating the average of median debt for all institutions.
@@ -230,6 +235,10 @@ df%>%
 ```
 
 *Quick Exercise* Summarize the average entering SAT scores in this dataset.
+
+```{r}
+# INSERT CODE HERE
+```
 
 ## Combining Commands
 
@@ -251,6 +260,14 @@ df%>%
 
 *Quick Exercise* Calculate average earnings for schools where SAT\>1200
 
+```{r}
+# INSERT CODE HERE
+```
+
 *Quick Exercise* Calculate the average debt for schools that admit over 50% of the students who apply.  
+
+```{r}
+# INSERT CODE HERE
+```
 
 

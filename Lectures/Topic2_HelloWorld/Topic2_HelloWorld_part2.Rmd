@@ -15,8 +15,7 @@ Today we're going to go quickly back over loading data and then  return to the t
 As mentioned last time, an Rmarkdown file contains two basic elements: text and code. That text and code can be combined or "knitted" into a variety of different document formats. Lets get you started by creating your own Rmarkdown file and knitting it. 
 
 ## Load relevant libraries
-```{r}
-## Get necessary libraries-- won't work the first time, because you need to install them!
+```{r, message=FALSE}
 library(tidyverse)
 ```
 
@@ -39,7 +38,7 @@ names(df)
 | adm_rate       | Admissions Rate: proportion of applications accepted                                                                                                                                                   |
 | ccbasic        | Type of institution-- see [here](https://data.ed.gov/dataset/9dc70e6b-8426-4d71-b9d5-70ce6094a3f4/resource/658b5b83-ac9f-4e41-913e-9ba9411d7967/download/collegescorecarddatadictionary_01192021.xlsx) |
 | selective      | Institution admits fewer than 10 % of applicants, 1=Yes, 0=No                                                                                                                                          |
-| research_u     | Institiution is a research university 1=Yes, 0=No                                                                                                                                                      |
+| research_u     | Institution is a research university 1=Yes, 0=No                                                                                                                                                      |
 | sat_avg        | Average Sat Scores                                                                                                                                                                                     |
 | md_earn_wne_p6 | Average Earnings of Recent Graduates                                                                                                                                                                   |
 |ugds  | Number of undergraduates |
@@ -131,8 +130,11 @@ Here are (many of) the logical operators that we use in R:
 -   `&` AND
 -   `|` OR
 
-*Quick Exercise: Select colleges that are from Texas AND have the word "community" in their name (the name variable is `instnm`).
+*Quick Exercise* Select colleges that are from Texas AND have the word "community" in their name (the name variable is `instnm`).
 
+```{r}
+# INSERT CODE HERE
+```
 
 ## Extending Select
 
@@ -157,7 +159,9 @@ df%>%
 
 *Quick Exercise* Use the same setup to select only character variables (`is.character`)
 
-
+```{r}
+# INSERT CODE HERE
+```
 
 ## Summarizing Data
 
@@ -172,6 +176,10 @@ df%>%
 
 *Quick Exercise* Summarize the average entering SAT scores in this dataset.
 
+```{r}
+# INSERT CODE HERE
+```
+
 ## Combining Commands
 
 We can also combine commands, so that summaries are done on only a part of the dataset. Below, we summarize median debt for selective schools, and not very selective schools.
@@ -184,6 +192,9 @@ df%>%
 
 *Quick Exercise* Calculate average earnings for schools where SAT\>1200 & the admissions rate is between 10 and 20 percent. 
 
+```{r}
+# INSERT CODE HERE
+```
 
 ## Mutate
 
@@ -207,8 +218,11 @@ df%>%
   summarize(mean_adm_rate_pct=mean(adm_rate_pct,na.rm=TRUE))
 ```
 
-*Quick exercise: create a new variable that's set to 1 if the college has more than 10,000 undergraduate students *
+*Quick Exercise* Create a new variable that's set to 1 if the college has more than 10,000 undergraduate students
 
+```{r}
+# INSERT CODE HERE
+```
 
 ## Plotting Data
 
@@ -223,12 +237,16 @@ df%>%
   geom_point()
 ```
 
-*Quick exercise: plot earnings by admission rate only for schools in California*
+*Quick Exercise* Plot earnings by admission rate only for schools in California.
+
+```{r}
+# INSERT CODE HERE
+```
 
 
+*Quick Exercise* Replicate the above plots, but put debt level on the y axis.
 
-
-*Quick exercise replicate the above plots, but put debt level on the y axis.*
-
-
+```{r}
+# INSERT CODE HERE
+```
 
