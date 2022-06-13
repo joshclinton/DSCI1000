@@ -26,9 +26,9 @@ I have not yet added appropriate citations to existing work in the relevant area
 
 #### 1\. The Wonderful World of Data Science
 
-Lecture notes:  [PDF](https://github.com/joshclinton/DSCI1000/tree/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/tree/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.Rmd)
+Lecture notes:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.Rmd)
 
-Spring 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/tree/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
+Spring 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
 
 #### 2\. Hello, World!
 
