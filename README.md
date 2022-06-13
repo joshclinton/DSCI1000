@@ -30,7 +30,6 @@ Lecture notes:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures
 
 Fall 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
 
-
 Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2022.html)
 
 #### 2\. Hello, World!
@@ -59,30 +58,17 @@ Lecture slides Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/
 
 [Wickham \& Grolemund, Chapter 3](https://learning-oreilly-com.proxy.library.vanderbilt.edu/home/)
 
-
-_ Broken Links Below __
-
-
 #### 4\. Univariate Data Analysis
 
-Lecture Notes, Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4_Univariate.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4_Univariate.pdf) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/Lecture4_Univariate.html)
+Lecture Notes, Part 1:  [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
 
 Dataset: [nba_players.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
 
-[Codebook for nba_players.Rds](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/nba_players_2018.html)
-
-
-Lecture Notes, Part 2:[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.Rmd)
-[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.pdf)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/Lecture4part2Uncertainty.html)
+Lecture Notes, Part 2: [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.html) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
 
 Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
-[Codebook for game_summary.Rds](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Lecture4Univariate/game_summary_codebook.html)
-
-[If you're interested, code to access the NBA reference database for player-level data](https://github.com/wdoyle42/vandy_ds_1000/blob/main/Lectures/Lecture4Univariate/nba_players.R)
-
-[If you're interested, code to access the NBA reference database for game-level data](https://github.com/wdoyle42/vandy_ds_1000/blob/main/Lectures/Lecture4Univariate/nba_teams.R)
+_ Broken Links Below __
 
 #### 5\. Univariate Data Visualization
 
