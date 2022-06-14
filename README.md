@@ -36,7 +36,7 @@ Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000
 
 Lecture Notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
 
-Data: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
+Dataset: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
 
 Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
 
@@ -46,9 +46,9 @@ Lecture Notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Le
 
 Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
 
-[MI2020_ExitPoll.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll.Rdata)
+Dataset: [MI2020_ExitPoll.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll.Rdata)
 
-[MI2020_ExitPoll_small.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll_small.rds)
+Dataset: [MI2020_ExitPoll_small.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll_small.rds)
 
 *Readings/Resources*
 
@@ -100,26 +100,16 @@ Dataset: [countycovid.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lec
 
 Dataset: [COVID.Death.Voting.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/COVID.Death.Voting.Rds) 
 
-_ Broken Links Below __
+#### 8\. Interactive Shiny
 
-#### 8\. Predicting (And Mapping)
+Lecture Notes: [Zipped HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/Topic8_interactive.html.zip) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/Topic8_interactive.Rmd)
 
-Predicting the Electoral College - JDC Code: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Predictions.Rmd)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_Predictions.html)
-
-Predicting the Electoral College: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.Rmd)
+Application: [app.R](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/app.R)
 [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.html)
 
-Dataset: [Pres2020.StatePolls.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/Pres2020.StatePolls.Rdata) 
+Dataset: [sp500.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/sp500.rds) 
 
-Optional Notes - Mapping in R: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Maps.Rmd)
-[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/Topic8_Maps.pdf)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_Maps.html)
-
-Optional Dataset: [StatePresidentialVote2020.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/StatePresidentialVote2020.Rdata) 
-
-Optional Dataset: [StateECV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Predictions/data/StateECV.Rdata) 
-
+_ Broken Links Below __
 
 #### 9\. Regression
 

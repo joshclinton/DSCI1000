@@ -1,0 +1,482 @@
+---
+title: "Interactive Graphics"
+author: "Will Doyle"
+date: "2/21/2022"
+output: html_document
+---
+
+
+Interactive graphics can be a great way to provide your audience with the information they need. An interactive graphic can also be a really good way to communicate information which might otherwise take dozens of different graphics.Today we;re going to create an interactive graphic using the plotly framework, then we're going to place that graphic into an interactive web-based app that can take user input and define the graphic based on that input.
+
+```{r}
+library(tidyverse)
+library(tidyquant)
+library(scales)
+library(plotly)
+library(shiny)
+library(emojifont)
+```
+
+## Topic for the Day: STONKS! `r emoji("rocket")`
+
+Data science has been very influential in financial analysis. Today we'll do a VERY simple financial analysis, identifying the stocks from each sector that had high the highest percent growth in the last three months, and plotting the closing prices and daily percent increases of those equities.
+
+## Tidyquant and R for Finance
+
+The `tidyquant` library contains an interface for accessing and analyzing a huge amount of financial information. We're going to use `tidyquant` to access information for the closing value of stock prices from all of the companies listed on the S&P 500 for the last 100 days. Let's start by querying which exchanges are available from `tidyquant.`
+
+```{r}
+tq_exchange_options()
+```
+
+We can also ask about which indexes are available. An index is a grouping of companies that's many times used to track the overall market, in this 500 companies that are listed on the New York Stock Exchange or the NASDAQ and have a market cap of 13.1 billion and have a trading volume of at least 250k shares in the previous six months.
+
+```{r}
+tq_index_options()
+```
+
+Let's grab the information needed for the S&P 500 by using `tq_index`
+
+```{r}
+sp500_index<-tq_index("SP500")
+```
+
+The `tq_index` output includes information about the companies, including which sector they're in:
+
+```{r}
+sp500_index%>%
+  group_by(sector)%>%
+  count()%>%
+  arrange(-n)
+```
+
+To access trading information about these companies, `tidyquant` requires their stock symbols. These are 2-4 letter codes that uniquely identify each company on the exchange.
+
+```{r}
+sp500_symbols<-sp500_index%>%
+  select(symbol)
+```
+
+Now we can use `tq_get` to get the trading information on these companies. `tq_get_options` tells us what we can access.
+
+```{r}
+tq_get_options()
+```
+
+We want stock prices, so we'll specify that below. In addition, we'll ask for the trading information from 100 days ago until today. This won't be an even 100 trading days to weekends and holidays.
+
+```{r,cache=TRUE}
+sp500<-tq_get(sp500_symbols,
+              get="stock.prices",
+              from=Sys.Date()-100,
+              to=Sys.Date()
+              )
+```
+
+And let's combine the information with the company information from the index:
+
+```{r}
+sp500<-sp500%>%
+  left_join(sp500_index,by=c("symbol"))
+```
+
+Now we're going to calculate two values: period_change will be the percent change in the stock price at closing from the beginning of the time period until the end; percent_change will be the daily percent change. Note how this is grouped by symbol so that the calculation is only done for the company in question.
+
+```{r}
+sp500<-  sp500%>%
+  mutate(date=ymd(date))%>%
+  group_by(symbol)%>%
+  arrange(date)%>%
+  mutate(period_change=(last(close)-first(close))/first(close)*100)%>%
+  mutate(percent_change=(close-lag(close))/lag(close) *100)%>% 
+  ungroup()
+```
+
+Now we'd like to know which companies had the biggest change during this time period. We'll get that by limiting the data and then ranking each company.
+
+```{r}
+sp500_symbol_rank<-sp500%>%
+  group_by(symbol,sector)%>%
+  summarize(period_change=last(period_change))%>%
+  group_by(sector)%>%
+  mutate(symbol_rank=rank(-period_change))%>%
+  ungroup()%>%
+  select(symbol, symbol_rank)
+```
+
+Once we've got that information we'll put it back into the full dataset.
+
+```{r}
+sp500<-sp500%>%
+  left_join(sp500_symbol_rank,by=c("symbol"))
+
+sp500<-sp500%>%
+  rename(Close=close,
+         `Percent Change`=percent_change,
+         Date=date)
+
+```
+
+And then we can write the output:
+
+```{r}
+write_rds(sp500,file="sp500.rds")
+```
+
+For class, we'll begin here:
+
+```{r}
+sp500<-readRDS("sp500.rds")
+```
+
+Let's start our graphic by choosing a couple of pieces of information that we'd like to know. Let's suppose we'd like to have information on the closing stock price for the top 20 companies in terms of performance over the last 100 (or so) days in the information technology. Let's set those parameter up front:
+
+```{r}
+variable_to_select<-"Close"
+number_to_select<-20
+sector_to_select<-"Information Technology"
+```
+
+Now let's create our plot:
+
+```{r}
+gg<-  ## Create a gg plot object
+  sp500%>% ## start with dataset
+  filter(sector==sector_to_select,symbol_rank<=number_to_select)%>% ## filter on variables above
+  ggplot(aes(x=Date, 
+             y=.data[[variable_to_select]], ## Within the function this uses the variable information above
+             color=company, ## Sets the color for the graphic
+           ))+
+  geom_point(aes(text=paste0(company,": ", ## Helps us label the result
+                             number(.data[[variable_to_select]],accuracy = .1 )) )) +
+  geom_smooth(se=FALSE)+ 
+  theme(legend.position = "none")
+
+gg # call the object
+```
+
+## Using plotly
+
+[Plotly](https://plotly.com/) is a framework for building web-based data visualizations. Using the `plotly` library we can convert just about any ggplot object into a plotly visualization:
+
+```{r}
+ggplotly(gg)
+```
+
+The `tooltip` option indicates what information will be displayed on hover. Using this option we can access the `text` aesthetic that was set in the `geom_point` option above.
+
+```{r}
+ggplotly(gg,tooltip = "text")
+```
+
+*Quick Exercise* Have the tooltip display the company symbol instead of the company name.
+
+```{r}
+# INSERT CODE HERE
+```
+
+## Changing Arguments
+
+Because we set our parameters outside of the script above, we can easily change the parameters and re-run it. Let's change the variable we're plotting, the number of companies plotted and the sector.
+
+```{r}
+variable_to_select<-"Percent Change"
+number_to_select<-10
+sector_to_select<-"Energy"
+```
+
+Notice that we can now run *the exact same code* but get a different result.
+
+```{r}
+gg <-
+  sp500 %>%
+  filter(sector == sector_to_select,
+         symbol_rank <= number_to_select) %>%
+  ggplot(aes(x = Date,
+             y = .data[[variable_to_select]],
+             color = company)) +
+  geom_point(aes(text = paste0(company, ": ",
+                               number(.data[[variable_to_select]], accuracy = .1)))) +
+      geom_smooth(aes(x = Date,
+             y = .data[[variable_to_select]],
+             color = company),
+             se = FALSE) +
+  theme(legend.position = "none")
+
+
+ggplotly(gg, tooltip = "text")
+```
+
+*Quick Exercise* Create a plot showing the top 25 companies in "Industrials" and their daily high (`high`).
+
+```{r}
+# INSERT CODE HERE
+```
+
+
+## Creating Functions
+
+One of the most powerful aspects of R (or really any programming language) is the ability to create functions. A function takes an input and gives a specified output. All functions in r are setup as follows:
+
+```{r,eval=FALSE}
+my_function=function(input){output=does_something  output}
+```
+
+In our case, the plot takes three inputs: `variable_to_select`, `number_to_select` and `sector_to_select` and gives us an output: a plotly object. Let's wrap that up in a function.
+
+```{r}
+
+dashboard_function <- function(variable_to_select = "Close", ## Default value specified
+                               number_to_select = 25, ## And for the number
+                               sector_to_select = "Information Technology") {   ## Note the open brace
+  gg <-
+    sp500 %>%
+    filter(sector == sector_to_select,
+           symbol_rank <= number_to_select) %>%
+    ggplot(aes(x = Date,
+               y = .data[[variable_to_select]],
+               color = company)) +
+    geom_point(aes(text = paste0(
+      company, ": ",
+      number(.data[[variable_to_select]], accuracy = .1)
+    ))) +
+    geom_smooth(aes(x = Date,
+                    y = .data[[variable_to_select]],
+                    color = company),
+                se = FALSE) +
+    theme(legend.position = "none")
+  
+  
+  out <- ggplotly(gg, tooltip = "text")
+  out
+} ## Close the function
+```
+
+Note that the function calls the result `out` in the end. This is needed if it's going to display the result. Now that we've got this wrapped up in a function we can easily call it and get results.
+
+```{r}
+dashboard_function()
+dashboard_function(sector_to_select = "Energy")
+```
+
+## Shiny Apps: The User Interface
+
+Once we have the function defined, we can move on and create an interactive web-based app that takes user input and provides the requested display. In R, one of the main tools for doing this is called [Shiny](https://shiny.rstudio.com/). It's usually better to run shiny apps in a simple R script, which for our class is contained in the file `sp500_app.R`. Below, we review the components of this code and describe what they do
+
+```{r,eval=FALSE}
+# Define UI for application that draws a plot
+ui <- fluidPage(
+
+    # Application title
+    titlePanel("Top Performing Companies by Sector"),
+
+    # Sidebar with a slider input for the number of companies
+    sidebarLayout(
+        sidebarPanel(
+            sliderInput("number_to_select",
+                        "Number of Companies",
+                        min = 1,
+                        max = 25,
+                        value = 10),
+            # Pull down menu for variables to select
+            selectInput(
+              "variable_to_select",
+              "Choose Outcome to Plot",
+              choices = c("Close", "Percent Change"),
+              selected = "Close"
+            ),
+            # Pull down menu for sector to select
+            selectInput(
+              "sector_to_select",
+              "Choose Sector",
+              choices =sector_list,
+              selected = "Close"
+            ),
+        ), ## Ends the sidebar panel 
+
+
+        # Show Plotly
+        mainPanel(
+           plotlyOutput("sp500dashboard")
+        ) #ends the main panel section
+    )## Ends the "sidebarlayout" setup
+) # Ends the user interface
+
+```
+
+## Title Panel
+
+The title panel, as advertised, provides a title for the app.
+
+```{r,eval=FALSE}
+ titlePanel("Top Performing Companies by Sector"),
+```
+
+## Sidebar
+
+The interface is set up with a sidebar and a main panel.This is defined by the Shiny argument `sidebarLayout`
+
+```{r,eval=FALSE}
+sidebarLayout(...)
+```
+
+The input goes into the sidebar, defined by `sidebarPanel`. Each element of the sidebar for this shiny app is a different type of input.
+
+```{r,eval=FALSE}
+  sidebarPanel(...)
+```
+
+## Input
+
+There are three inputs that can be adjusted by the user: number of companies to plot, what variable to plot, and what sector to plot.
+
+### Slider Input: `sliderInput`
+
+The first input is a "slider" input, which is used to set the number of companies. Notice that it's definedd to be 1 and 25, which can be changedd, and that the current value is 10.
+
+```{r,eval=FALSE}
+
+ sliderInput("number_to_select",
+                        "Number of Companies",
+                        min = 1,
+                        max = 25,
+                        value = 10),
+
+```
+
+*Quick Exercise* Allow the user to choose between 1 and 30 companies, and set the default at 15.
+
+
+```{r}
+# INSERT CODE HERE
+```
+
+### Select Input `selectInput`
+
+The second input is a select input, which allows the user to choose from a list of options. There are two of these set up in this app: one for which variable and one for which sector
+
+```{r,eval=FALSE}
+            # Pull down menu for variables to select
+            selectInput(
+              "variable_to_select",
+              "Choose Outcome to Plot",
+              choices = c("Close", "Percent Change"),
+              selected = "Close"
+            ),
+            # Pull down menu for sector to select
+            selectInput(
+              "sector_to_select",
+              "Choose Sector",
+              choices =sector_list,
+              selected = "Close"
+            ),
+```
+
+*Quick Exercise*: change the variable selection to include the daily high variable, `high`
+
+```{r}
+# INSERT CODE HERE
+```
+
+
+## Main Panel
+
+The main panel displays the results, in this case the plotly graphic:
+
+```{r,eval=FALSE}
+    # Show a plot of the generated distribution
+        mainPanel(
+           plotlyOutput("sp500dashboard")
+        )
+```
+
+## Shiny Apps: The Server
+
+A shiny server runs in the background. It takes input from the user interface and generates output. In general, the elements of the server define different objects and how they are to be created from the inputs given.
+
+
+```{r,eval=FALSE}
+# Define server logic required to draw a graphic
+server <- function(input, output) {
+
+  ## Execute function
+  output$sp500dashboard <- renderPlotly({
+
+    req(input$number_to_select,input$variable_to_select,input$sector_to_select)
+
+dashboard_function(number_to_select = input$number_to_select,
+                   variable_to_select = input$variable_to_select,
+                   sector_to_select = input$sector_to_select)
+
+})
+}
+```
+
+
+```{r,eval=FALSE}
+server <- function(input, output) {...}
+```
+
+## Define an object
+
+Our server generates one object: the graphic, called `sp500dashboard.` This is the result of a function call that takes the three inputs: `variable_to_select`, `sector_to_select`, `number_to_select`. This is outputted using the `renderPlotly` command:
+
+```{r,eval=FALSE}
+## Execute function
+output$sp500dashboard <- renderPlotly({
+  req(input$number_to_select,
+      input$variable_to_select,
+      input$sector_to_select)
+  
+  dashboard_function(
+    number_to_select = input$number_to_select,
+    variable_to_select = input$variable_to_select,
+    sector_to_select = input$sector_to_select
+  )
+  
+})
+```
+
+## Set the requirements
+
+The required inputs are defined in the `req` argument. This ensures that the
+
+```{r,eval=FALSE}
+  req(input$number_to_select,
+      input$variable_to_select,
+      input$sector_to_select)
+```
+
+## Run the function
+
+The dashboard function we created earlier is now run, taking the three arguments specified by user input.
+
+```{r,eval=FALSE}
+  dashboard_function(
+    number_to_select = input$number_to_select,
+    variable_to_select = input$variable_to_select,
+    sector_to_select = input$sector_to_select
+  )
+```
+
+*Quick Exercise*:* Change the function to include a legend, using `legend.position="bottom"`
+
+```{r}
+# INSERT CODE HERE
+```
+
+## Call the App
+
+Once we're done creating the user interface and the server, we can call them both using the `shinyApp` function. 
+
+```{r,eval=FALSE}
+shinyApp(ui = ui, server = server)
+```
+
+## Publishing
+
+Rstudio offers free webhosting for shiny apps, and it's remarkably easy to post these once they've been created. This app can be accessed at:
+
+https://wdoyle42.shinyapps.io/sp500_dashboard/
+
+
