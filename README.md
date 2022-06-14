@@ -26,7 +26,7 @@ I have not yet added appropriate citations to existing work in the relevant area
 
 #### 1\. The Wonderful World of Data Science
 
-Lecture notes:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.Rmd)
+Lecture Slides:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/Topic1_Motivation.Rmd)
 
 Fall 2021 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic1_IntroMotivation/survey_results2021.html)
 
@@ -34,17 +34,17 @@ Spring 2022 Class Survey Results: [HTML](https://github.com/joshclinton/DSCI1000
 
 #### 2\. Hello, World!
 
-Lecture notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
+Lecture Notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld.Rmd)
 
 Data: [College Debt Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/sc_debt.Rds)
 
-Lecture notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
+Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic2_HelloWorld/Topic2_HelloWorld_part2.Rmd)
 
 #### 3\.  Data Wrangling
 
-Lecture slides Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.Rmd)
+Lecture Notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part1.Rmd)
 
-Lecture slides Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
+Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/Topic3_DataWrangling_part2.Rmd)
 
 [MI2020_ExitPoll.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic3_DataWrangling/MI2020_ExitPoll.Rdata)
 
@@ -60,19 +60,19 @@ Lecture slides Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/L
 
 #### 4\. Univariate Data Analysis
 
-Lecture Notes, Part 1:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
+Lecture Notes Part 1:  [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_Univariate_part1.Rmd) 
 
 Dataset: [nba_players.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/nba_players_2018.Rds)
 
-Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
+Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic4_UnivariateDescription/Topic4_UnivariateUncertainty_part2.Rmd)
 
 Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
 #### 5\. Univariate Data Visualization
 
-Lecture slides, Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.Rmd) 
+Lecture Slides Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.Rmd) 
 
-Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.Rmd)
+Lecture Notes Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.Rmd)
 
 Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
@@ -80,36 +80,25 @@ If interested: [Challenger: The Final Flight](https://www.netflix.com/title/8101
 
 #### 6\. Conditional Relationships \& Visualization
 
-Lecture Notes, Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.Rmd)
+Lecture Notes Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.Rmd)
 
 Dataset: [MI2020_ExitPoll_small.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/MI2020_ExitPoll_small.Rds) 
 
 Dataset: [Pres2020.PV.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Pres2020.PV.Rds) 
 
-Lecture Notes, Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.html) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.Rmd)
+Lecture Notes Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.html) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.Rmd)
 
 Dataset: [Pres2020.StatePolls.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Pres2020.StatePolls.Rds) 
 
+#### 7\. Mapping Data In R (One way)
+
+Lecture Notes: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/Topic7_MappingDataInR.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/Topic7_MappingDataInR.Rmd)
+
+Dataset: [PresStatePolls04to20.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/PresStatePolls04to20.Rds) 
+Dataset: [countycovid.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/countycovid.Rds) 
+Dataset: [COVID.Death.Voting.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/COVID.Death.Voting.Rds) 
+
 _ Broken Links Below __
-
-
-
-#### 7\. Resampling Redux
-
-Partial List of functions used thus far: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/FunctionList.Rmd)
-[HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/FunctionList.html)
-
-Lecture Notes - Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.Rmd)
-[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.pdf)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_Student.html)
-
-Lecture Notes - Part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.Rmd)
-[PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.pdf)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic7_Resampling/Topic7_DetailedNotes_part2.html)
-
-Dataset: [pa.sample.select.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Resampling/data/pa.sample.select.Rdata) 
-
-Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
 #### 8\. Predicting (And Mapping)
 
