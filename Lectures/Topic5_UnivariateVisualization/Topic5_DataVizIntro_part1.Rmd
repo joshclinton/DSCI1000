@@ -1,0 +1,282 @@
+---
+title: "Topic 5. Visualization and Univariate Graphics"
+author: "Prof. Josh Clinton"
+output: beamer_presentation
+fontsize: 10pt
+---
+
+# Today's Agenda
+
+- Introduction to data visualization!
+
+- Principles of Data Visualization
+
+# Communicating & Visualizing Data is Essential
+
+- Data does not exist in a vacuum -- it is always interpreted in relationship to something.
+
+- Humans infer causality from relationships (much too quickly!).
+
+- All data-science should be question driven!  What is the question you are answering with the visualization you are providing?
+
+- Always think:  what is the answer that your visualization is providing?
+
+- Goal is accuracy, not visual appeal!  Science, not Art!
+
+- Does your visualization communicate the relationship cleanly and accurately?
+
+# January 28, 1986: 29 Celcius
+\centering
+\includegraphics[height=.8\textheight]{figs/ChallIce.png}
+
+# You are NASA (or Thokiol)...
+
+- What is the question you are asking?
+
+- What is the information you need to make that determination?
+
+# Do You Launch? Pre-Launch Analysis of Damage
+\centering
+\includegraphics[height=.8\textheight]{figs/SlideAnalysis.png}
+
+# Numbers are Only Meaningful in terms of Relationships
+\centering
+\includegraphics[height=.8\textheight]{figs/Summary.png}
+
+# 73 seconds after launch...
+\centering
+\includegraphics[height=.8\textheight]{figs/Aftermath.png}
+
+# Aftermath: Feynman
+\centering
+\includegraphics[height=.8\textheight]{figs/Feynman.png}
+
+# Post Launch: Official Analysis
+\centering
+\includegraphics[height=.8\textheight]{figs/PostLaunchPresentation.png}
+
+# What We Can Do Instead
+```{r message=FALSE, warning = FALSE}
+library(tidyverse)
+library(alr4)
+data(Challeng)
+
+Betterplot <- Challeng %>%
+  ggplot(aes(x=temp,y=damage)) +
+  geom_point() +
+  labs(title = "Relationship Between Temp. & O-Ring Damage",
+       x="Termperature (Farenheit)",
+       y="Measure of O-Ring Damage") + 
+  scale_x_continuous(limits=c(25,85)) +
+  geom_vline(xintercept=31) + 
+  annotate("text",x = 31, y=10, label = "Launch Temp") +
+  geom_smooth(method = "loess")
+```
+
+# What We Can Do Instead
+```{r message=FALSE, warning = FALSE}
+Betterplot
+```
+
+# More Info?
+\centering
+\includegraphics[width=.4\textwidth]{figs/Netflix.png}
+\includegraphics[width=.4\textwidth]{figs/Tufte.png}
+
+# Unfortuately...in 2003
+\includegraphics[width=\textwidth]{figs/ColumbiaExplosion.png}
+
+# Unfortuately...in 2003
+\includegraphics[width=\textwidth]{figs/Columbia2003.png}
+
+
+# GOAL: Your visuals must tell an accurate story
+
+- Humans over-interpret relationships as causal.  You must be informative without being misleading.
+
+- Tables and graphs are essential.
+
+- Visualizations must be stand-alone as much as possible.
+
+NOTE: Rule of thumb: show it to someone without explanation. If they are confused, re-do!
+
+# Dimensions of Visualization
+
+Essential elements of every good visualization:
+
+- Well-labeled axes (no variable names!).
+
+- Title describing the data being plotted.
+
+- Meaningful scale for x and y axes.
+
+- Appropriate visualization for the type of data being characterized.
+
+- ADVANCED: Uncertainty (if relevant)
+
+# Dimensions of Visualization
+
+You have several "dimensions" to use when presenting information
+
+- Horizontal dimension (x-axis) 
+
+- Vertical dimension (y-axis) 
+
+- Shape of data points
+
+- Color
+
+- Size of data points
+
+# Don't be confusing
+
+- Map each variable to at most one dimension.  
+
+- Be intuitive -- don't assign small numbers large dots, etc.
+
+- Don't include extraneous information/visual elements.
+
+# Best Graph Ever?  Charles Joseph Minard
+
+\includegraphics[height=.95\textheight]{figs/Minard}
+
+# Or maybe John Snow?  (Not Jon Snow!)
+
+\includegraphics[height=.95\textheight]{figs/Snow}
+
+# Your graphs should make sense!
+
+- The visualization should clearly answer the question.
+
+\centering
+\includegraphics<1>[height=.9\textheight]{figs/super-bowl}
+\includegraphics<2>[height=.9\textheight]{figs/salaries}
+
+# Your graphs should make sense!
+- The visualization itself should not be the focus of the visualization.  The focus should be on the relationship being visualized.
+
+\includegraphics[height=\textheight]{figs/infographic}
+
+# Your graphs should make sense!
+- The visualization should be complete (present all the information) but not include extraneous/distracting information/visual-elements.
+
+\includegraphics[height=\textheight]{figs/NBCMap}
+
+# Your graphs should be accurate and not mislead
+
+- Numbers (and patterns in numbers) should match the visualization
+
+\centering
+\includegraphics<1>[height=.9\textheight]{figs/sun-pie}
+\includegraphics<2>[height=.9\textheight]{figs/temps}
+\includegraphics<3>[height=.9\textheight]{figs/budget}
+\includegraphics<4>[height=.9\textheight]{figs/drugs}
+\includegraphics<5>[height=.9\textheight]{figs/NovaScotiaVotes}
+
+# Your graphs should be accurate and not mislead
+- Avoid piecharts, but if you use them make sure they sum to 100.
+
+\includegraphics<1>[height=.9\textheight]{figs/Fox100}
+\includegraphics<2>[height=.95\textheight]{figs/bitcoin}
+
+# Your graphs should be accurate and not mislead
+- Variation in a variable should vary in one-visual dimension, not two! (Piecharts bad)
+
+\centering
+\includegraphics<1>[width=\textwidth]{figs/battery}
+\includegraphics<2>[height=.8\textheight]{figs/cake}
+
+# But, don't put too much info on a graph!
+
+- Think about the central point you are trying to convey!  
+
+- A visualization with too much data (and not enough variation in that data?) is meaningless...
+
+\centering
+\includegraphics<1>[height=.85\textheight]{figs/too-much-1}
+
+- As are graphs with too little variation
+
+# Don't use a graph if you don't need a graph!
+\centering
+\includegraphics<1>[width=\textwidth]{figs/mueller}
+\includegraphics<2>[height=.9\textheight]{figs/lgbt}
+\includegraphics<3>[width=\textwidth]{figs/drinking-canada}
+
+# Barplots are good, but not 3d barplots!
+
+- Does the visualization reveal all of the variation of interest?
+
+- Depth is a dimension that can show variation, but it can be hard to interpret!
+
+\includegraphics[width=\textwidth]{figs/3dbar}
+
+# Don't use deceptive y-axes...
+
+- We don't always need to include 0, unless not doing so is confusing.
+
+\includegraphics[height=.9\textheight]{figs/heights}
+
+# Don't use deceptive y-axes...
+
+- Axes can make small changes look big and big changes look small.
+
+\includegraphics[width=\textwidth]{figs/border}
+
+# Don't use deceptive y-axes...
+
+- The range can also change how you interpret the data in relationship to suggested relationships.
+
+\includegraphics[width=\textwidth]{figs/welfare}
+
+# ...But please do use axes!
+\includegraphics<+>[width=\textwidth]{figs/obamacare}
+\includegraphics<+>[width=\textwidth]{figs/SoccerXaxis}
+
+# But not multiple y-axes!
+\centering
+\includegraphics<+>[height=.9\textheight]{figs/ads}
+\includegraphics<+>[height=.8\textheight]{figs/vinyl1}
+\includegraphics<+>[height=.8\textheight]{figs/vinyl2}
+\includegraphics<+>[width=\textwidth]{figs/bubbles}
+\includegraphics<+>[width=\textwidth]{figs/TechTesla}
+
+# Only use colors if meaningful
+\centering
+\includegraphics<+>[height=.9\textheight]{figs/obama}
+\includegraphics<+>[height=.9\textheight]{figs/operating-systems}
+
+# Uncertainty?  
+- How confident are we about our visualized predictions?
+\centering
+\includegraphics<+>[height=.9\textheight]{figs/Bills}
+
+# Things to think about
+
+- What is the goal of the graph -- what information do you want to convey and for what purpose?
+
+- What is your eye drawn to?  Is that relevant?
+
+- What does your brain tell you about what you conclude from that?  Is that the correct conclusion?
+
+- Visualization is reducing complexity (hopefully), but is the reduction informative or confusing?
+
+- Graphs overwhelm text and tables so think about them!
+
+#   Is this a good visualization of the pandemic in the US?
+
+\includegraphics[height=.9\textheight]{figs/CovidMap}
+
+https://coronavirus.jhu.edu/us-map
+
+# How about these?
+
+\includegraphics<+>[height=.9\textheight]{figs/RiskOverTime}
+\includegraphics<+>[height=.9\textheight]{figs/RiskFeb7}
+\includegraphics<+>[height=.9\textheight]{figs/CovidVU}
+
+# Visualization is very powerful
+
+- Humans infer causality very quickly so make sure that the relationships are not misguided.
+
+- Make sure people get what you intend from the visualization.

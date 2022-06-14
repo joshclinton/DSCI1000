@@ -68,19 +68,18 @@ Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/L
 
 Dataset: [game_summary.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Lecture4Univariate/game_summary.Rds) 
 
-_ Broken Links Below __
-
 #### 5\. Univariate Data Visualization
 
-Detailed Lecture Notes: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/NationalPopularVote.pdf) 
+Lecture slides, Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_DataVizIntro_part1.Rmd) 
 
-Lecture slides: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_StudentCopy_VisualizationUnivariateGraphics.pdf)
+Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/Topic5_VisualizationUnivariateGraphics_part2.Rmd)
 
 Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
-Student Outline: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/StudentOutline_UnivariateDataViz.Rmd) 
-
 [If interested: Challenger: The Final Flight](https://www.netflix.com/title/81012137)
+
+_ Broken Links Below __
+
 
 #### 6\. Conditional Data Visualization
 
