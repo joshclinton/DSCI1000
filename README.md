@@ -76,22 +76,23 @@ Lecture Notes, Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/L
 
 Dataset: [Pres2020.PV.Rdata](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic5_UnivariateVisualization/data/Pres2020.PV.Rdata) 
 
-[If interested: Challenger: The Final Flight](https://www.netflix.com/title/81012137)
+If interested: [Challenger: The Final Flight](https://www.netflix.com/title/81012137)
+
+#### 6\. Conditional Relationships \& Visualization
+
+Lecture Notes, Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Graphing.Rmd)
+
+Dataset: [MI2020_ExitPoll_small.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/MI2020_ExitPoll_small.Rds) 
+
+Dataset: [Pres2020.PV.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Pres2020.PV.Rds) 
+
+Lecture Notes, Part 2: [HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.html) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Topic6_ConditionalVariation_Prediction.Rmd)
+
+Dataset: [Pres2020.StatePolls.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVariation/Pres2020.StatePolls.Rds) 
 
 _ Broken Links Below __
 
 
-#### 6\. Conditional Data Visualization
-
-Student Outline: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/StudentOutline_ConditionalVisualization.Rmd) 
-
-Complete Markdown Code: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_MarkdownComplete.Rmd) 
-
-Lecture slides - Part 1: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part1.pdf)
-
-Lecture slides - Part 2: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/Topic6_ConditionalVariation_Part2.pdf)
-
-Optional Report on 2020 Polls: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic6_ConditionalVisualization/AAPOR-Task-Force-on-2020-Pre-Election-Polling_Report-FNL.pdf) 
 
 #### 7\. Resampling Redux
 

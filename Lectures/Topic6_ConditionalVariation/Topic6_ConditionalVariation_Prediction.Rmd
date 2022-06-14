@@ -1,0 +1,368 @@
+---
+title: "Topic 6. Conditional Variation as Prediction"
+author: "Josh Clinton"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+New functions and libraries:
+
+- `plotly` library
+- Working with dates
+- Simple looping
+
+First load the data of all state-level polls for the 2020 presidential election.
+
+```{r message=FALSE}
+# setting message=FALSE hides all the tidyverse loading messages
+library(tidyverse)
+Pres2020.StatePolls <- readRDS(file="Pres2020.StatePolls.Rds")
+glimpse(Pres2020.StatePolls)
+```
+
+
+Variables of potential interest include:
+
+- _Biden_ : Percentage of respondents supporting Biden, the Democrat, in poll (0-100)
+- _Trump_ : Percentage of respondents supporting Trump, the Republican, in poll (0-100)
+- _BidenCertVote_ : Percentage of vote Biden, the Democrat, actually received in the election (0-100)
+- _TrumpCertVote_ : Percentage of vote Trump, the Democrat, actually received in the election (0-100)
+- _Winner_ : whether Biden won ("Dem") or Trump won ("Rep")
+- _poll.predicted_ : Indicator for whether the poll correctly predicted who won (1) or not (0)
+- _State_ & _StateName_ : the state where the poll was conducted
+- _EV_ : the number of Electoral College Votes the state is worth for the winning candidate
+
+# Overall Task:  
+
+- How do we use this data to calculate the probability that Biden will win the presidency of the United States by winning the Electoral College?
+
+### Task 1: How should we translate a poll result into a predicted probability?
+
+Suppose that I give you 10 polls from a state.  
+
+Load in the data and create the some mutations to create new variables.
+
+```{r}
+Pres2020.StatePolls <- Pres2020.StatePolls %>%
+   mutate(BidenNorm = Biden/(Biden+Trump),
+          TrumpNorm = 1-BidenNorm,
+          Biden = Biden/100,
+          Trump=Trump/100)
+```
+
+How can you use them to create a probability?  Discuss!  (I can think of 3 ways.)
+
+- Measure 1: Fraction of polls with Biden in the lead
+- Measure 2: Biden Pct = Probability Biden wins
+- Measure 3: Normalized Biden Pct = Probability Biden wins (i.e., all voters either vote for Biden or Trump). Sometimes called "two-party" vote.
+
+How does this vary across states?  The joys of `group_by()`.  Note that `group_by()` defines what happens for all subsequent code in that code chunk. So here we are going to calculate the mean separately for each state.
+
+```{r}
+stateprobs <- Pres2020.StatePolls %>%
+    group_by(StateName) %>%
+      summarize(BidenProbWin1 = mean(Biden > Trump),
+                BidenProbWin2 = mean(Biden),  
+                BidenProbWin3 = mean(BidenNorm))
+
+stateprobs
+```
+
+Clearly they differ, so let's visualize to try to understand what is going on.  Install the library `plotly`
+
+```{r}
+library(plotly)
+gg <- stateprobs %>%
+  ggplot(aes(x=BidenProbWin2, y=BidenProbWin3,text=paste(StateName))) +
+  geom_point() +
+  geom_abline(intercept=0,slope=1) +
+  labs(x= "Probability as % Support",
+       y = "Probability as Two-Party % Support",
+       title = "Comparing Probability of Winning Measures")
+
+ggplotly(gg,tooltip = "text")
+```
+
+So removing the undecided and making the probabilities for Biden and Trump sum to 100% is consequential.
+
+What about if we compare these measures to the fration of polls with a given winner?  After all, it seems implausible that the Biden would ever lose California or Trump would ever lose Tennessee.
+
+```{r}
+library(plotly)
+gg <- stateprobs %>%
+  ggplot(aes(x=BidenProbWin2, y=BidenProbWin1,text=paste(StateName))) +
+  geom_point() +
+  geom_abline(intercept=0,slope=1) +
+  labs(x= "Probability as % Support",
+       y = "Probability as % Polls Winning",
+       title = "Comparing Probability of Winning Measures")
+
+ggplotly(gg,tooltip = "text")
+```
+
+So what do you think?  Exactly the same data, but just different impications depending on how you choose to measure the probability of winning a state. Data sciene is as much about argument and reasoning as it is about coding.  How we measure a concept is often critical to the conclusions that we get.
+
+### Task 2: Start "simple" -- calculate the probability that Biden wins PA
+
+But we want to combine these probabilities with the Electoral College votes in each state.  Not every state has the same amount of Electoral College votes -- it is typically given by the number of Senators (2) plus the number of representatives (at least 1) so we need to account for this if we want to make a projection about who is going to win the Electoral College.
+
+- Create a tibble with just polls from PA.
+
+```{r}
+PA.dat <- Pres2020.StatePolls %>% 
+  filter(State == "PA")
+```
+
+- Now compute these three probabilities.  What functions do we need?
+
+```{r}
+PA.dat %>%
+      summarize(BidenProbWin1 = mean(Biden > Trump),
+                BidenProbWin2 = mean(Biden),  
+                BidenProbWin3 = mean(BidenNorm))
+```
+
+- What do you think about this?
+
+### Task 3: Given that probability, how do we change the code to compute the expected number of Electoral College Votes `EV` for Biden?
+
+- Keep the code from above and copy and paste so you can understand how each step changes what we are doing.  Note that we have the number of electoral college votes associated with each state `EV` that we want to use to compute the expected number of electoral college votes.  But recall that when we `summarize` we change the tibble to be the output of the function.  So how do we keep the number of Electoral College votes for a future mutation?
+
+```{r}
+PA.dat %>%
+      summarize(BidenProbWin1 = mean(Biden > Trump),
+                BidenProbWin2 = mean(Biden),
+                BidenProbWin3 = mean(BidenNorm),
+                EV = mean(EV)) %>%
+      mutate(BidenEV1 = BidenProbWin1*EV,
+             BidenEV2 = BidenProbWin2*EV,
+             BidenEV3 = BidenProbWin3*EV)
+
+```
+
+Note that we are calculation the Expected Value of the Electoral College votes using: _Probability that Biden wins state i_ X _Electoral College Votes in State i_.  This will allocate fractions of Electoral College votes even though the actual election is winner-take all. This is OK because the fractions reflect the probability that an alternative outcome occurs.
+
+*Quick Exercise* How can we get compute the expected number of Electoral College votes for Trump in each measure?  NOTE: There are at least 2 ways to do this because this is a 2 candidate race
+
+```{r}
+# INSERT CODE HERE
+```
+
+- `EV-BidenEV`, or compute `TrumpProbWin`
+
+### Task 4:  Now generalize to every state by applying this code to each set of state polls.
+
+- What do we need to do this calculation for every state in our tibble?
+- First, compute probability of winning a state. (How?)
+- Second, compute expected Electoral College Votes. (How?)
+
+```{r}
+Pres2020.StatePolls %>%  
+  group_by(StateName) %>%
+    summarize(BidenProbWin1 = mean(Biden > Trump),
+              BidenProbWin3 = mean(BidenNorm),
+              EV = mean(EV),
+              State = first(State)) %>%
+    mutate(State = State,
+              BidenECVPredicted1 = EV*BidenProbWin1,
+              TrumpECVPredicted1 = EV- BidenECVPredicted1,
+              BidenECVPredicted3 = EV*BidenProbWin3,
+              TrumpECVPredicted3 = EV- BidenECVPredicted3) %>%
+  summarize(BidenECVPredicted1=sum(BidenECVPredicted1),
+            BidenECVPredicted3=sum(BidenECVPredicted3),
+            TrumpECVPredicted1=sum(TrumpECVPredicted1),
+            TrumpECVPredicted3=sum(TrumpECVPredicted3),)
+```
+
+### Task 5:  Now compute total expected vote by adding to that code
+
+- NOTE: Actually 306 - 232
+- What do we need to do to the tibble we created in Task 4 to get the overall number of Electoral College Votes?
+
+```{r}
+Pres2020.StatePolls %>%  
+  group_by(StateName) %>%
+    summarize(BidenProbWin1 = mean(Biden > Trump),
+              BidenProbWin3 = mean(BidenNorm),
+              EV = mean(EV)) %>%
+    mutate(BidenECVPredicted1 = EV*BidenProbWin1,
+              TrumpECVPredicted1 = EV- BidenECVPredicted1,
+              BidenECVPredicted3 = EV*BidenProbWin3,
+              TrumpECVPredicted3 = EV- BidenECVPredicted3) %>%
+    summarize(BidenECV1 = sum(BidenECVPredicted1),
+              TrumpECV1 = sum(TrumpECVPredicted1),
+              BidenECV3 = sum(BidenECVPredicted3),
+              TrumpECV3 = sum(TrumpECVPredicted3))
+```
+
+*Quick Exercise* Could also do this for just polls conducted in the last 7 days.  How?
+
+```{r}
+# INSERT CODE HERE
+```
+
+THINKING: What about states that do not have any polls?  What should we do about them?  Is there a reason why they might not have a poll?  Is that useful information?  Questions like this become more relevant when we start to restrict the sample.
+
+Here are the number of polls done in each state in the last 3 days.  Note that when we use fewer days our measure based on the percentage of polls won may be more affected?
+
+```{r}
+Pres2020.StatePolls %>%
+  filter(DaysToED < 3) %>%
+  count(State) %>%
+  ggplot(aes(x=n)) +
+  geom_bar() + 
+  scale_x_continuous(breaks=seq(0,15,by=1)) +
+  labs(x="Number of Polls in a State",
+       y="Number of States",
+       title="Number of Polls in States \n in the Last 3 Days of 2020")
+```
+
+
+# So far we have taken polls as fixed. What if we allow randomnesss via resampling?
+
+###  Start "simple": probability that Biden wins PA
+
+- Create a tibble with just PA to simplify
+
+```{r}
+PA.dat <- Pres2020.StatePolls %>% 
+  filter(State == "PA")
+```
+
+Write a loop that, for each iteration....
+
+- Draws a sample of the same number of polls as were done in PA using `sample_n`
+- Calculates the probability of a win using measures just discussed
+
+But before you start, how does this differ from what we did previously with the PA data?  What do we need to add to the code?
+
+
+```{r}
+ProbBidenWin.PA <- NULL
+NSamples <- 1000
+
+for(i in 1:NSamples){
+    ProbBidenWin.PA <- PA.dat %>%
+      sample_n(nrow(PA.dat),replace = TRUE) %>% 
+      summarize(BidenProbWin1 = mean(Biden > Trump),
+                BidenProbWin2 = mean(Biden),
+                BidenProbWin3 = mean(BidenNorm)) %>%
+      bind_rows(ProbBidenWin.PA)
+}
+```
+
+### Compute probability that Biden wins and the range containing 95% of the expected means (if we were to redo everything exactly as is).
+
+```{r}
+ProbBidenWin.PA %>%
+  summarize(LCI1 = quantile(BidenProbWin1,.025),
+            ProbWin1 = mean(BidenProbWin1),
+            UCI1 = quantile(BidenProbWin1,.975),
+            LCI3 = quantile(BidenProbWin3,.025),
+            ProbWin3 = mean(BidenProbWin3),
+            UCI3 = quantile(BidenProbWin3,.975))
+```
+
+*Quick Exercise* Can you do this for Wisconsin? Take it from start to finish using code from above.
+
+```{r}
+# INSERT CODE HERE
+```
+
+## Now do this for all the states!
+
+- Let us draw a new sample of 1545 state-level polls `B` times and go...
+
+```{r}
+ElectoralCollegeVotes <- NULL
+B <- 100
+Number.Polls <- nrow(Pres2020.StatePolls)
+
+for(i in 1:B){
+  dat <- sample_n(Pres2020.StatePolls,
+                  Number.Polls, 
+                  replace=TRUE)
+
+  ElectoralCollegeVotes <- dat %>%  
+  group_by(StateName) %>%
+    summarize(BidenProbWin1 = mean(Biden > Trump),
+              BidenProbWin2 = mean(Biden),
+              BidenProbWin3 = mean(BidenNorm),
+              EV = mean(EV)) %>%
+    mutate(BidenECVExpected1 = BidenProbWin1*EV,
+           TrumpECVExpected1 = EV - BidenECVExpected1,
+           BidenECVExpected3 = BidenProbWin3*EV,
+           TrumpECVExpected3 = EV - BidenECVExpected3) %>%
+    summarize(BidenECV1 = sum(BidenECVExpected1),
+              TrumpECV1 = sum(TrumpECVExpected1),
+              BidenECV3 = sum(BidenECVExpected3),
+              TrumpECV3 = sum(TrumpECVExpected3)) %>%
+    bind_rows(ElectoralCollegeVotes) 
+}
+```
+
+### So what is the probability Biden gets at least 270 Electoral College Votes among the states with a public-released poll?
+
+The wonderful thing about using the empirical bootstrap is that we can compute any probability of interest.
+
+```{r}
+ ElectoralCollegeVotes %>%
+    summarize(BidenWin1 = mean(BidenECV1 > 270),
+              BidenWin3 = mean(BidenECV3 > 270))
+```
+
+
+*Quick Exercise* What is the probability that Biden is predicted to get more than 300 electoral college votes from the states that have conducted a poll?
+```{r}
+ ElectoralCollegeVotes %>%
+    summarize(BidenWin1 = mean(BidenECV1 > 300),
+              BidenWin3 = mean(BidenECV3 > 300))
+```
+
+Perhaps it makes more sense to visualize this. What type of data is this?  Categorical or continuous?  What graph should we use as a result?  Let's check what the variable looks like:
+
+```{r}
+ElectoralCollegeVotes %>%
+  select(BidenECV1) %>%
+  summary()
+```
+
+Since continuous, let's try a histogram with 40 bins...
+```{r}
+ggplot(ElectoralCollegeVotes) + 
+  geom_histogram(aes(x=BidenECV1), fill= "BLUE",bins=40)+ 
+  geom_histogram(aes(x=TrumpECV1), fill= "RED",bins=40) + 
+  geom_histogram(aes(x=BidenECV3), fill= "light blue",bins=40)+ 
+  geom_histogram(aes(x=TrumpECV3), fill= "pink",bins=40) +
+  geom_vline(xintercept=301) +  # plot actual outcome
+  geom_vline(xintercept=232) +  # plot actual outcome
+  labs(x="Electoral College Vote Estimates",
+       y="Number of Simulations")
+```
+
+If we want to round the values to the nearest integer (i.e., no decimals) we can use a barplot to plot every unique value _after rounding!_ we get...
+```{r}
+ggplot(ElectoralCollegeVotes) + 
+  geom_bar(aes(x=round(BidenECV1,digits=0)), fill= "BLUE") +
+  geom_bar(aes(x=round(TrumpECV1,digits=0)), fill= "RED") + 
+  geom_bar(aes(x=round(BidenECV3,digits=0)), fill= "light blue")+ 
+  geom_bar(aes(x=round(TrumpECV3,digits=0)), fill= "pink") +
+  geom_vline(xintercept=301) + 
+  geom_vline(xintercept=232) + 
+  labs(x="Electoral College Vote Estimates",
+       y="Number of Simulations")
+```
+
+
+# What is going on here? Why do our estimates not contain the true outcome even after doing resampling?
+
+- We assumed individual polls were fixed, but those are uncertain too!
+- Assumption of random sampling in polling?  Are respondents a random sample of voters?
+- Assumption of random sampling in bootstrapping -- are poll results in an election really independent?  Or are outcomes correlated?
+
+## Outstanding questions in terms of:
+
+- Data collection (sampling and recruitment of respondents)
+- Data analysis (Which measure of probability do you use?  How quantify uncertainty?)
+- Data quality: Are all polls equally good?
+
