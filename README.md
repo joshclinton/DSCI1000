@@ -95,7 +95,9 @@ Dataset: [Pres2020.StatePolls.Rds](https://github.com/joshclinton/DSCI1000/blob/
 Lecture Notes: [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/Topic7_MappingDataInR.pdf) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/Topic7_MappingDataInR.Rmd)
 
 Dataset: [PresStatePolls04to20.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/PresStatePolls04to20.Rds) 
+
 Dataset: [countycovid.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/countycovid.Rds) 
+
 Dataset: [COVID.Death.Voting.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic7_Mapping/COVID.Death.Voting.Rds) 
 
 _ Broken Links Below __
