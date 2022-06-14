@@ -105,7 +105,6 @@ Dataset: [COVID.Death.Voting.Rds](https://github.com/joshclinton/DSCI1000/blob/m
 Lecture Notes: [Zipped HTML](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/Topic8_interactive.html.zip) [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/Topic8_interactive.Rmd)
 
 Application: [app.R](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/app.R)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic8_Predictions/Topic8_PredictionsClassWork.html)
 
 Dataset: [sp500.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/sp500.rds) 
 
