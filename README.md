@@ -108,26 +108,21 @@ Application: [app.R](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/
 
 Dataset: [sp500.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic8_Interactive/sp500.rds) 
 
-_ Broken Links Below __
-
 #### 9\. Regression
 
-Regression notes, part 1: [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart1.html)
+Regression notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.PDF)
 
-Regression notes, part 2:
-[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart2.html)
+Regression notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.PDF)
 
-Regression notes, part 3:
-[.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd)
-[HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic9_Regression/LectureRegressionPart3.html)
-
+Regression notes, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.PDF)
 
 ["Simpler" version of workflows](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/workflows_examples.Rmd)
 
 Movie Data: [mv.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/mv.Rds)
 
 [In case you're interested, code for accessing movie data, including the IMDB data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/access_movie_data.R)
+
+_ Broken Links Below __
 
 #### 10\.  Clustering, Text, and Twitter...
 
