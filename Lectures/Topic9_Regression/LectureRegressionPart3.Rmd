@@ -2,6 +2,7 @@
 title: "Regression: Feature Selection, Part 3"
 author: "Will Doyle"
 output: pdf_document
+always_allow_html: true
 ---
 
 ## Introduction
