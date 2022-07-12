@@ -144,54 +144,18 @@ Tweet-Level Data on Trump Tweets - for part 4: [Trumptweets.Rds](https://github.
 
 Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trump_tweet_words.Rds)
 
-_ Broken Links Below __
 
 #### 11\. Classification: Or, Become an Admissions Dean for Fun and Profit!
-Lecture 1: The Admissions "Funnel" and the Problem of Classification
 
-[Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions.Rmd)
+Lecture 1: The Admissions "Funnel" and the Problem of Classification: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.pdf)
 
-[HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions.html)
+Lecture 2: Logistic Regression and the AUC: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.pdf)
 
-[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
+Lecture 3: Cross Validation and Feature Selection for Classifiers: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.pdf)
 
-Lecture 2: Logistic Regression and the AUC
+Lecture 4: Changing Policy: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.pdf)
 
-[Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_2.Rmd)
-
-[HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_2.html)
-
-[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
-
-Lecture 3: Cross Validation and Feature Selection for Classifiers
-
-[Rmd Notes](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_3.Rmd)
-
-[HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_3.html)
-
-
-[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
-
-
-Lecture 4: Changing Policy
-
-[Rmd Notes](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/college_admissions_4.Rmd)
-
-[HTML Notes](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic11Classification/college_admissions_4.html)
-
-[Data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
-
-
-
- ### Our Last Day! 
- 
-[What happened to Zillow Offers? part 1](https://www.businessinsider.com/zillow-offers-pause-ibuyers-homes-atlanta-phoenix-dallas-houston-minneapolis-2021-10)
-
-[What happened to Zillow Offers?, part 2](https://www.cnet.com/personal-finance/mortgages/what-happened-at-zillow-how-a-prized-real-estate-site-lost-at-ibuying/)
-
-[Leaderboard from Movies!]()
-
-[Google form for feedback](https://forms.gle/1U6FPZ1tRATsTS8Z8)
+[admit_data.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
 ### Helpful Resources
 
