@@ -110,11 +110,11 @@ Dataset: [sp500.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/
 
 #### 9\. Regression
 
-Regression notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.PDF)
+Regression notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.pdf)
 
-Regression notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.PDF)
+Regression notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.pdf)
 
-Regression notes, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.PDF)
+Regression notes, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.pdf)
 
 ["Simpler" version of workflows](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/workflows_examples.Rmd)
 
