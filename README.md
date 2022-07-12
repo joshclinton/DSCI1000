@@ -110,11 +110,11 @@ Dataset: [sp500.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/
 
 #### 9\. Regression
 
-Regression notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.pdf)
+Lecture Notes Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart1.pdf)
 
-Regression notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.pdf)
+Lecture Notes Part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart2.pdf)
 
-Regression notes, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.pdf)
+Lecture Notes Part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/LectureRegressionPart3.pdf)
 
 ["Simpler" version of workflows](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/workflows_examples.Rmd)
 
@@ -124,13 +124,13 @@ Movie Data: [mv.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/
 
 #### 10\.  Clustering, Text, Twitter, and Sentiment...
 
-Clustering notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.pdf)
+Lecture Notes Part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.pdf)
 
-Clustering notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.pdf)
+Lecture Notes Part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.pdf)
 
-Predicting with Text, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.pdf)
+Lecture Notes Part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.pdf)
 
-Sentiment Analysis with Twttter Text, part 4:  [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.pdf)
+Lecture Notes Part 4:  [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.pdf)
 
 Florida County Data - for part 1: [FloridaCountyData.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FloridaCountyData.Rds)
 
@@ -147,13 +147,13 @@ Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rds](https://gi
 
 #### 11\. Classification: Or, Become an Admissions Dean for Fun and Profit!
 
-Lecture 1: The Admissions "Funnel" and the Problem of Classification: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.pdf)
+Lecture Notes Part 1: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_1.pdf)
 
-Lecture 2: Logistic Regression and the AUC: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.pdf)
+Lecture Notes Part 2: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_2.pdf)
 
-Lecture 3: Cross Validation and Feature Selection for Classifiers: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.pdf)
+Lecture Notes Part 3: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_3.pdf)
 
-Lecture 4: Changing Policy: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.pdf)
+Lecture Notes Part 4: [Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11_Classification/college_admissions_4.pdf)
 
 [admit_data.rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic11Classification/admit_data.rds)
 
