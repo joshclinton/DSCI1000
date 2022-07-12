@@ -122,28 +122,29 @@ Movie Data: [mv.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/
 
 [In case you're interested, code for accessing movie data, including the IMDB data](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic9_Regression/access_movie_data.R)
 
+#### 10\.  Clustering, Text, Twitter, and Sentiment...
+
+Clustering notes, part 1: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.pdf)
+
+Clustering notes, part 2: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.pdf)
+
+Predicting with Text, part 3: [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.pdf)
+
+Sentiment Analysis with Twttter Text, part 4:  [.Rmd](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.Rmd) [PDF](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.pdf)
+
+Florida County Data - for part 1: [FloridaCountyData.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FloridaCountyData.Rds)
+
+US County Vote Data - for part 1: [CountyVote2004_2020.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/CountyVote2004_2020.Rds)
+
+Federalist Papers Data - for part 2: [FederalistPaperCorpusTidy.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperCorpusTidy.Rds)
+
+Federalist Papers Data - for part 3: [FederalistPaperDocumentTermMatrix.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperDocumentTermMatrix.Rds)
+
+Tweet-Level Data on Trump Tweets - for part 4: [Trumptweets.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trumptweets.Rds)
+
+Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rds](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trump_tweet_words.Rds)
+
 _ Broken Links Below __
-
-#### 10\.  Clustering, Text, and Twitter...
-
-Clustering notes, part 1: [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeans.html)
-
-Clustering notes, part 2: [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringKmeansText.html)
-
-Predicting with Text, part 3: [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_ClusteringTextPredict.html)
-
-Sentiment Analysis with Twttter Text, part 4:  [.Rmd](https://raw.githubusercontent.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.Rmd) [HTML](https://raw.githack.com/wdoyle42/vandy_ds_1000/main/Lectures/Topic10_Clustering/Topic10_TrumpTweetSentiment.html)
-
-Florida County Data - for part 1: [FloridaCountData.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FloridaCountyData.Rda)
-
-Federalist Papers Data - for part 2: [FederalistPaperCorpusTidy.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperCorpusTidy.Rda)
-
-Federalist Papers Data - for part 3: [FederalistPaperDocumentTermMatrix.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/FederalistPaperDocumentTermMatrix.Rda)
-
-Tweet-Level Data on Trump Tweets - for part 4: [Trumptweets.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trumptweets.Rda)
-
-Word-Level Data on Trump Tweets - for part 4: [Trump_tweet_words.Rda](https://github.com/joshclinton/DSCI1000/blob/main/Lectures/Topic10_Clustering/Trump_tweet_words.Rda)
-
 
 #### 11\. Classification: Or, Become an Admissions Dean for Fun and Profit!
 Lecture 1: The Admissions "Funnel" and the Problem of Classification
